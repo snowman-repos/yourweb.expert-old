@@ -1,4 +1,4 @@
-/* darrylsnow : 0.1.0 : Tue Dec 02 2014 22:18:51 GMT+0800 (CST) */html {
+/* darrylsnow : 0.1.0 : Wed Dec 03 2014 14:11:06 GMT+0800 (CST) */html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -519,6 +519,9 @@ section > svg {
 .button-login:hover {
   opacity: 1;
 }
+.button-modal-close {
+  z-index: 9;
+}
 .calendar {
   text-transform: uppercase;
 }
@@ -530,7 +533,7 @@ section > svg {
   font-weight: 200;
 }
 .calendar-monthandyear {
-  margin-top: 0.5em;
+  margin-top: 1.5em;
   font-weight: 800;
 }
 .carousel {
@@ -989,7 +992,7 @@ section > svg {
   -webkit-transition: opacity 0.4s;
           transition: opacity 0.4s;
   width: 100%;
-  z-index: 11;
+  z-index: 12;
 }
 .menu {
   font-size: 2em;
@@ -1187,9 +1190,6 @@ section > * {
 .section-end {
   width: 100%;
 }
-.slide-in {
-  overflow: hidden;
-}
 .slide-in:after {
   clear: both;
   content: "";
@@ -1263,7 +1263,7 @@ section > * {
   margin: 0 0.2em;
   padding: 0.2em;
   position: relative;
-  z-index: 9;
+  z-index: 10;
 }
 .tooltip.active .tooltip-content,
 .tooltip:active .tooltip-content,
@@ -1300,21 +1300,21 @@ section > * {
   left: 50%;
   margin: 0 0 0 -150px;
   opacity: 0;
-  padding: 1em;
+  padding: 1em 1em 0.5em 1em;
   pointer-events: none;
   position: absolute;
   text-align: center;
   -webkit-transition: opacity 0.3s 0.3s;
           transition: opacity 0.3s 0.3s;
   width: 300px;
-  z-index: 10;
+  z-index: 11;
 }
 .tooltip-content:after {
   border: solid transparent;
   border-color: transparent;
   border-top-color: #fff;
   border-width: 10px;
-  bottom: 0;
+  bottom: -0.65em;
   content: "";
   display: block;
   height: 0;

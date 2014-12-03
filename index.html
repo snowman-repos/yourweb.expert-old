@@ -326,14 +326,15 @@ body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,
         <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" transform="translate(480, 320) scale(1, -1) translate(-480, -318) " class="menu-toggle-bottom"></path>
       </svg><span class="menu-toggle-text">Menu</span>
     </button>
-    <button class="button button-extrasmall button-login">Login
+    <button onclick="_gaq.push [&apos;_trackEvent&apos;, &apos;Login&apos;, &apos;Open&apos;]" class="button button-extrasmall button-login">Login
       <svg viewbox="0 0 32 32" class="icon">
         <use xlink:href="#icon-lock">
       </svg>
     </button>
     <div id="modal-wechat" aria-hidden="true" role="dialog" aria-labelledby="modal-wechat-header" tabindex="-1" class="modal modal--black">
       <div class="modal-content">
-        <h2 id="modal-wechat-header">Scan this QR code to add me on Wechat / &#x5FAE;&#x4FE1;</h2><img src="images/wechat-qr-code.jpg" alt="My Wechat QR code" class="image-block">
+        <h2 id="modal-wechat-header">Scan this QR code to add me on Wechat / &#x5FAE;&#x4FE1;</h2>
+        <h3>xuedalong</h3><img src="images/wechat-qr-code.jpg" alt="My Wechat QR code" class="image-block">
         <button data-modal="wechat" class="button button-small js-modal-close">close
           <svg viewbox="0 0 32 32" class="icon">
             <use xlink:href="#icon-times">
@@ -385,7 +386,7 @@ body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,
             <div class="media slide-in">
               <div class="media-image">
                 <div class="avatar slide-in-left-2">
-                  <div class="avatar-info"><a href="" style="color:#fff" data-modal="aboutme" aria-describedby="modal-aboutme" class="link js-modal-trigger">more?</a></div><img src="images/darryl-snow.png" alt="Darryl Snow" itemprop="photo" class="avatar-image">
+                  <div class="avatar-info"><a href="" style="color:#fff" data-modal="aboutme" aria-describedby="modal-aboutme" onclick="_gaq.push [&apos;_trackEvent&apos;, &apos;About&apos;, &apos;More&apos;]" class="link js-modal-trigger">more?</a></div><img src="images/darryl-snow.png" alt="Darryl Snow" itemprop="photo" class="avatar-image">
                 </div>
               </div>
               <div class="media-content">
@@ -393,31 +394,31 @@ body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,
                       <meta itemprop="region" content="Yunnan">, <span itemprop="country">China</span></span></span></h1>
                 <meta itemprop="url" content="http://yourweb.expert">
                 <ul class="icon-list icon-list--red slide-in-right-2">
-                  <li><a href="javascript:void(0);" title="Add me on Wechat / &#x5FAE;&#x4FE1;" data-modal="wechat" aria-describedby="modal-wechat" class="js-modal-trigger"><span>Add me on Wechat / &#x5FAE;&#x4FE1;</span>
+                  <li><a href="javascript:void(0);" title="Add me on Wechat / &#x5FAE;&#x4FE1;" data-modal="wechat" aria-describedby="modal-wechat" onclick="_gaq.push [&apos;_trackEvent&apos;, &apos;Contact&apos;, &apos;Wechat&apos;]" class="js-modal-trigger"><span>Add me on Wechat / &#x5FAE;&#x4FE1;</span>
                       <svg viewbox="0 0 32 32" class="icon">
                         <use xlink:href="#icon-wechat">
                       </svg></a></li>
-                  <li><a href="callto://+darryl.snow" title="Skype me"><span>Skype me</span>
+                  <li><a href="callto://+darryl.snow" title="Skype me" onclick="_gaq.push [&apos;_trackEvent&apos;, &apos;Contact&apos;, &apos;Skype&apos;]"><span>Skype me</span>
                       <svg viewbox="0 0 32 32" class="icon">
                         <use xlink:href="#icon-skype">
                       </svg></a></li>
-                  <li><a href="https://github.com/darryl-snow?tab=repositories" title="Browse my Github repositories"><span>Browse my Github repositories</span>
+                  <li><a href="https://github.com/darryl-snow?tab=repositories" title="Browse my Github repositories" onclick="_gaq.push [&apos;_trackEvent&apos;, &apos;Contact&apos;, &apos;Github&apos;]"><span>Browse my Github repositories</span>
                       <svg viewbox="0 0 32 32" class="icon">
                         <use xlink:href="#icon-github">
                       </svg></a></li>
-                  <li><a href="https://www.linkedin.com/profile/view?id=173295028" title="Browse my Linkedin profile"><span>Browse my Linkedin profile</span>
+                  <li><a href="https://www.linkedin.com/profile/view?id=173295028" title="Browse my Linkedin profile" onclick="_gaq.push [&apos;_trackEvent&apos;, &apos;Contact&apos;, &apos;Linkedin&apos;]"><span>Browse my Linkedin profile</span>
                       <svg viewbox="0 0 32 32" class="icon">
                         <use xlink:href="#icon-linkedin">
                       </svg></a></li>
-                  <li><a href="tel:+8618612009701" title="Phone me"><span>Phone me</span>
+                  <li><a href="tel:+8618612009701" title="Phone me" onclick="_gaq.push [&apos;_trackEvent&apos;, &apos;Contact&apos;, &apos;Phone&apos;]"><span>Phone me</span>
                       <svg viewbox="0 0 32 32" class="icon">
                         <use xlink:href="#icon-phone">
                       </svg></a></li>
-                  <li><a href="mailto:darryl@yourweb.expert" title="Email me"><span>Email me</span>
+                  <li><a href="mailto:darryl@yourweb.expert" title="Email me" onclick="_gaq.push [&apos;_trackEvent&apos;, &apos;Contact&apos;, &apos;Email&apos;]"><span>Email me</span>
                       <svg viewbox="0 0 32 32" class="icon">
                         <use xlink:href="#icon-envelope">
                       </svg></a></li>
-                  <li><a href="http://weibo.com/dazsnow" title="Follow me on Weibo"><span>Follow me on Weibo</span>
+                  <li><a href="http://weibo.com/dazsnow" title="Follow me on Weibo" onclick="_gaq.push [&apos;_trackEvent&apos;, &apos;Contact&apos;, &apos;Weibo&apos;]"><span>Follow me on Weibo</span>
                       <svg viewbox="0 0 32 32" class="icon">
                         <use xlink:href="#icon-weibo">
                       </svg></a></li>
@@ -551,7 +552,7 @@ body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,
                   <p>My book covers the workflow processes and roles required to produce such a project, where they overlap, and how they can be optimised to be conducive to the best possible product.</p>
                   <p>It&apos;s due for release in Q1 2015 and will be published as an e-book on Amazon. If you&apos;d like to be notified when it&apos;s released, please subscribe for updates below.</p>
                 </div>
-                <button class="button js-subscribe-button slide-in-right-3">subscribe for updates
+                <button onclick="_gaq.push [&apos;_trackEvent&apos;, &apos;Subscribe&apos;, &apos;Open&apos;]" class="button js-subscribe-button slide-in-right-3">subscribe for updates
                   <svg viewbox="0 0 32 32" class="icon">
                     <use xlink:href="#icon-envelope">
                   </svg>
@@ -571,7 +572,7 @@ body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,
                   <h2 id="blog-heading" class="slide-in-left-1"><span itemprop="headline" class="js-blog-post-title"></span><span itemprop="datePublished" content="Sat Jul 19 2014 03:17:00 GMT+0800 (CST)" class="subheading js-blog-post-date"></span></h2>
                   <div itemprop="articleBody" class="slide-in-left-2 js-blog-post-body"></div>
                 </div>
-                <div class="align--centre"><a href="" title="Visit my blog" class="button slide-in-left-3 js-blog-post-button">Continue reading
+                <div class="align--centre"><a href="" title="Visit my blog" onclick="_gaq.push [&apos;_trackEvent&apos;, &apos;External&apos;, &apos;Blog&apos;]" class="button slide-in-left-3 js-blog-post-button">Continue reading
                     <svg viewbox="0 0 32 32" class="icon">
                       <use xlink:href="#icon-arrow-right">
                     </svg></a></div>
@@ -622,6 +623,21 @@ body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,
             <use xlink:href="#icon-pencil">
           </svg>My blog</a></nav>
     </div>
+    <script>
+      function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})}
+      loadCSS("styles/main.css");
+      
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-57304409-1"]);
+      _gaq.push(["_trackPageview"]);
+      
+      (function() {
+      	var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+      	ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+      	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      
+    </script>
     <script src="/scripts/main.js" async></script>
   </body>
 </html>

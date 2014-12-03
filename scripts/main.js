@@ -1,4 +1,4 @@
-/* darrylsnow : 0.1.0 : Wed Dec 03 2014 14:19:41 GMT+0800 (CST) */(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+/* darrylsnow : 0.1.0 : Wed Dec 03 2014 15:43:54 GMT+0800 (CST) */(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var Blog;
 
 require("es6-promise").polyfill();
@@ -8,10 +8,11 @@ require("fetch");
 Blog = (function() {
   function Blog() {
     this.el = {
-      title: (document.querySelectorAll(".js-blog-post-title span"))[0],
+      title: (document.getElementsByClassName("js-blog-post-title"))[0],
       date: (document.getElementsByClassName("js-blog-post-date"))[0],
       body: (document.getElementsByClassName("js-blog-post-body"))[0],
-      url: (document.getElementsByClassName("js-blog-post-url"))[0]
+      url: (document.getElementsByClassName("js-blog-post-url"))[0],
+      button: (document.getElementsByClassName("js-blog-post-button"))[0]
     };
     this.post = {
       title: 0,
@@ -47,9 +48,10 @@ Blog = (function() {
     year = date.getFullYear();
     this.el.title.innerText = this.post.title;
     this.el.date.innerText = day + " " + month + ", " + year;
+    this.el.date.setAttribute("content", date);
     this.el.body.innerHTML = this.post.body;
-    this.el.url.setAttribute("href");
-    return this.post.url;
+    this.el.button.setAttribute("href", this.post.url);
+    return this.post.url.setAttribute("content", this.post.url);
   };
 
   return Blog;
@@ -480,7 +482,9 @@ Rates = (function() {
       amount = amount.toString().substr(0, 2) + "," + amount.toString().substr(2);
     }
     this.el.rate.innerText = symbol + amount;
-    return this.el.currency.innerText = currency;
+    this.el.currency.innerText = currency;
+    this.el.rate.setAttribute("content", amount);
+    return this.el.currency.setAttribute("content", symbol);
   };
 
   Rates.prototype.addEventListeners = function() {

@@ -9,27 +9,32 @@
     <meta name="author" content="Darryl Snow">
     <meta name="copyright" content="2015 Darryl Snow">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="author" href="https://plus.google.com/+DarrylSnow">
+    <link rel="publisher" href="https://plus.google.com/+DarrylSnow">
     <link rel="stylesheet" href="/styles/main.css">
     <!--if lt IE 9
     script(src="http://html5shiv.googlecode.com/svn/trunk/html5.js")
     
     -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
-    <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/images/favicons/favicon-160x160.png" sizes="160x160">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/images/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
     <meta name="msapplication-TileColor" content="#3498db">
-    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
-    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
-    <link rel="bookmark" href="/images/favicons/favicon.ico">
+    <meta name="msapplication-TileImage" content="images/mstile-144x144.png">
+    <meta name="msapplication-config" content="/images/browserconfig.xml">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="bookmark" href="/images/favicon.ico">
   </head>
   <body><svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
@@ -432,8 +437,8 @@
               <h2 id="work-heading" class="slide-in-left-1">What I do
                 <div class="subheading">and have been doing for over 15 years</div>
               </h2>
-              <meta itemprop="name" content="Darryl Snow">
-              <meta itemprop="description" content="Professional design, development, and project management for websites &amp; web apps">
+              <meta itemprop="name" content="Web Design, Development, &amp; Project Management">
+              <meta itemprop="description" content="Darryl Snow is a web professional with over 15 years of experience - http://yourweb.expert">
               <meta itemprop="category" content="Software">
               <div class="work-left slide-in-left-2">
                 <ul class="services">
@@ -474,7 +479,10 @@
                   <div class="component-content">
                     <div class="rates">
                       <h3>My Weekly Rate</h3>
-                      <div class="rates-number"><small itemprop="priceCurrency" content="$" class="rates-number-currency">usd</small><span itemprop="price" content="2400.00" class="rates-number-rate">$2,400</span></div>
+                      <div class="rates-number"><small itemprop="priceCurrency" content="$" class="rates-number-currency">usd</small><span itemprop="price" content="2400.00" class="rates-number-rate">$2,400</span>
+                        <meta itemprop="PriceSpecification" content="weekly rate">
+                        <meta itemprop="category" content="Software">
+                      </div>
                       <div class="rates-conversions">
                         <ul class="icon-list icon-list--cobalt">
                           <li><a data-currency="USD" title="Convert rate to USD" class="js-convert-currency active">
@@ -564,14 +572,16 @@
           </section>
           <section id="blog" role="region" aria-labelledby="blog-heading" class="section--black">
             <div class="blog slide-in">
-              <div class="blog-left">
+              <div itemscope itemtype="http://schema.org/Blog" class="blog-left">
                 <div class="blog-post">
-                  <h2 id="blog-heading" class="slide-in-left-1 js-blog-post-title"><span></span>
-                    <div class="subheading js-blog-post-date"></div>
+                  <meta itemprop="author" content="Darryl Snow">
+                  <meta itemprop="url" content="" class="js-blog-post-url">
+                  <h2 id="blog-heading" class="slide-in-left-1"><span itemprop="title" class="js-blog-post-title"></span>
+                    <div itemprop="datePublished" content="" class="subheading js-blog-post-date"></div>
                   </h2>
-                  <div class="slide-in-left-2 js-blog-post-body"></div>
+                  <div itemprop="articleBody" class="slide-in-left-2 js-blog-post-body"></div>
                 </div>
-                <div class="align--centre"><a href="http://darryl-snow.tumblr.com/post/92167288432/setting-the-tone" alt="Visit my blog" class="button slide-in-left-3 js-blog-post-url">Read More
+                <div class="align--centre"><a href="" alt="Visit my blog" class="button slide-in-left-3 js-blog-post-button">Read More
                     <svg viewBox="0 0 32 32" class="icon">
                       <use xlink:href="#icon-arrow-right"></use>
                     </svg></a></div>
